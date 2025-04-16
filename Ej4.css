@@ -1,0 +1,164 @@
+/* General para el formulario */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1{
+    text-align: center;
+    color: black;
+}
+/* Aca hago el recuadro del fomulario */
+.container{
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+.form-organizado{
+    display: flex;
+    text-align: center;
+    margin-bottom: 10px;
+}
+label {
+    width: 85px;
+    font-weight: bold; /*Hago negrita*/
+    text-align: left; /*Que este a la izquierda*/
+    margin-right: 10px;
+}
+input{
+    flex: 1;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+select{
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button{
+    background-color: rgb(230, 230, 230);
+    color: black;
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover{
+    background-color: #798dff;
+    transform: scale(1.05);
+}
+/* Estilo Secundario */
+.nuevo-estilo {
+    background-color: #1e1e2f; /* Fondo oscuro elegante */
+    color: #ffffff; /* Texto en blanco para contraste */
+}
+.nuevo-estilo h1{
+    font-family: 'Times New Roman', Times, serif;
+    color: #ffffff;
+}
+/* Estilos para el contenedor en el nuevo estilo */
+.nuevo-estilo .container {
+    background: #2a2a3a; /* Fondo más oscuro para el formulario */
+    color: #ffffff; /* Texto en blanco */
+    border: 2px solid #ff4081; /* Borde con color vibrante */
+    box-shadow: 0 0 15px rgba(255, 64, 129, 0.5); /* Sombra rosa */
+}
+
+/* Estilos para los inputs en el nuevo estilo */
+.nuevo-estilo input,
+.nuevo-estilo select {
+    background: #3a3a4a;
+    color: #ffffff;
+    border: 1px solid #ff4081;
+}
+
+.nuevo-estilo input::placeholder {
+    color: #bbbbbb;
+}
+
+/* Estilos para los botones */
+.nuevo-estilo button {
+    background-color: #ff4081; /* Color vibrante */
+    color: white;
+    border: none;
+    transition: 0.3s;
+}
+
+.nuevo-estilo button:hover {
+    background-color: #ff79b0;
+    transform: scale(1.05);
+}
+
+/* Estilo de Alto Contraste */
+.alto-contraste {
+    background-color: black; /* Fondo negro */
+    color: yellow; /* Texto amarillo brillante */
+}
+
+/* Contenedor con bordes y alto contraste */
+.alto-contraste .container {
+    background: rgb(26, 25, 25);
+    color: yellow;
+    border: 3px solid white; /* Borde blanco bien visible */
+    box-shadow: 0 0 10px white; /* Resalta el contenedor */
+}
+
+/* Inputs y selects con máximo contraste */
+.alto-contraste input,
+.alto-contraste select {
+    background: black;
+    color: yellow;
+    border: 2px solid white;
+    font-weight: bold;
+}
+
+.alto-contraste h1{
+    font-family: 'Times New Roman', Times, serif;
+    color: yellow;
+}
+
+.alto-contraste input::placeholder {
+    color: lightgray;
+}
+
+/* Labels con alto contraste */
+.alto-contraste label {
+    color: yellow;
+    font-weight: bold;
+}
+
+/* Botones bien visibles */
+.alto-contraste button {
+    background-color: yellow;
+    color: black;
+    font-weight: bold;
+    border: 2px solid white;
+    transition: 0.3s;
+}
+
+.alto-contraste button:hover {
+    background-color: white;
+    color: black;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Ej4.css">
+    <script src="Ej4.js"></script>
+    <title>Formulario de Alto Contraste</title>
+</head>
+
+<body>
+    <div class="container" >
+        <h1>Formulario de Datos Personales</h1>
+        <form action="" id="formulario" class="" onsubmit="return validacion()">
+            <div class="form-organizado">
+                <label for="nombre">Nombre: </label>
+                <input name="nombre" id="nombre" type="text" required> <!--El campo Required es para que sea obligatorio-->
+            </div>
+            <div class="form-organizado">
+                <label for="apellido">Apellido: </label>
+                <input name="apellido" id="apellido" type="text" required>
+            </div>
+            <div class="form-organizado">
+                <label for="email">Email: </label>
+                <input name="email" id="email" type="email" required>
+            </div>
+            <div class="form-organizado">
+                <label for="fechaNacimiento">Fecha de Nacimiento: </label>
+                <input type="date" id="fechaNacimiento" name="fechaNacimiento" required>
+            </div>
+            <div class="form-organizado">
+                <label for="paisResidencia">Seleccione su pais:</label>
+                <!--Hago una lista que desplace opciones-->
+                <select name="pais" id="pais">
+                    <option value="">Seleccione su pais</option>
+                    <option value="1">Argentina</option>
+                    <option value="2">Brasil</option>
+                    <option value="3">Colombia</option>
+                    <option value="4">Uruguay</option>
+                    <option value="5">Venezuela</option>s
+                </select>
+            </div>
+            <div class="botones">
+                <button type="submit">Enviar</button>
+                <button type="button" onclick="document.body.classList.toggle('nuevo-estilo')">Estilo Secundario</button>
+                <button type="button" onclick="document.body.classList.toggle('alto-contraste')">Alto Contraste</button>
+            </div>
+            
+        </form>
+    </div>
+</body>
+</html>
